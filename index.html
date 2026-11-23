@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moettá — Econometria e modelagem quantitativa</title>
+  <meta name="description" content="Moettá é um software de econometria e modelagem quantitativa: extração de dados oficiais, tratamento, estimação, predição e leitura dos resultados em prosa, numa janela nativa.">
+  <meta name="theme-color" content="#F7F6F2">
+  <meta property="og:title" content="Moettá — Econometria e modelagem quantitativa">
+  <meta property="og:description" content="Do dado oficial à leitura do resultado. Extração, tratamento, estimação e predição num só lugar.">
+  <meta property="og:image" content="/assets/img/previsao.webp">
+  <link rel="icon" href="/assets/marca/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/marca/moetta-128.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/marca/moetta-512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=3">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="topo">
+  <div class="wrap nav__inner">
+    <nav class="nav__left" aria-label="Seções">
+      <a class="pill" href="#software">Software</a>
+      <a class="pill" href="#funcionalidades">Funcionalidades</a>
+      <a class="pill" href="#modulos">Módulos</a>
+      <a class="pill" href="#metodos">Métodos</a>
+    </nav>
+    <a href="#topo" class="lockup lockup--nav" aria-label="Moettá, início">
+      <img class="lockup__logo" src="/assets/marca/moetta-128.png" alt="" width="40" height="40">
+      <img class="lockup__nome" src="/assets/marca/moetta-nome.svg" alt="Moettá" width="115" height="30">
+    </a>
+    <div class="nav__right">
+      <a class="pill" href="#planos">Planos</a>
+      <a class="pill pill--dark" href="#contato">Solicitar acesso</a>
+      <button class="icon-btn nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 9h14M2 13h9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="drawer" hidden>
+    <div class="wrap drawer__inner">
+      <a href="#software">Software</a><a href="#funcionalidades">Funcionalidades</a><a href="#modulos">Módulos</a>
+      <a href="#metodos">Métodos</a><a href="#ia">Assistente</a><a href="#planos">Planos</a><a href="#contato">Solicitar acesso</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= DESTAQUES (grade editorial) ================= -->
+<section class="lead wrap">
+  <div class="rowhead">
+    <h2 class="rowhead__title">Em destaque</h2>
+    <p class="rowhead__meta">Novembro de 2026</p>
+  </div>
+
+  <div class="lead__grid">
+    <!-- coluna esquerda -->
+    <div class="lead__col">
+      <article class="story">
+        <p class="meta"><span class="tag">Inflação</span><span>Expectativas do mercado</span></p>
+        <button class="story__img" data-lightbox data-src="/assets/img/expectativas.webp" aria-label="Ampliar tela das expectativas de inflação">
+          <img src="/assets/img/c-expectativas.webp" alt="Expectativas Focus para o IPCA desenhadas no ano a que se referem, até 2030" width="1093" height="565">
+        </button>
+        <h3>O que o mercado espera para a inflação, até 2030</h3>
+        <p>As projeções do boletim Focus, do Banco Central, desenhadas no ano a que se referem — com a data em que cada uma foi feita.</p>
+      </article>
+      <article class="story story--rule">
+        <p class="meta"><span class="tag">Dados</span><span>Direto da fonte</span></p>
+        <h3>Banco Central, IBGE e B3 em um clique, sem baixar planilha</h3>
+      </article>
+    </div>
+
+    <!-- coluna central -->
+    <div class="lead__col lead__col--main">
+      <p class="meta"><span class="tag">Moettá</span><span>Econometria para quem quer entender a economia</span></p>
+      <button class="feature-shot" data-lightbox data-src="/assets/img/previsao.webp" aria-label="Ampliar tela de predição">
+        <img src="/assets/img/previsao.webp" alt="Tela de Predição do Moettá: previsão do IPCA mensal para os próximos 12 meses, com intervalo de 95%" width="1900" height="1055" fetchpriority="high">
+      </button>
+      <h1>Entenda a economia com dados oficiais — e respostas claras.</h1>
+      <p class="lede">Inflação, juros, câmbio, crédito, atividade. O Moettá busca as séries no Banco Central, no IBGE e na B3, desenha os gráficos, projeta os próximos meses e explica cada resultado em português. Do estudante ao economista.</p>
+      <div class="actions">
+        <a href="#contato" class="btn btn--dark">Solicitar acesso</a>
+        <a href="#funcionalidades" class="btn btn--line">Ver o software</a>
+      </div>
+    </div>
+
+    <!-- coluna direita -->
+    <div class="lead__col">
+      <article class="story">
+        <p class="meta"><span class="tag">Juros</span><span>Desde o Plano Real</span></p>
+        <button class="story__img" data-lightbox data-src="/assets/img/series.webp" aria-label="Ampliar tela de Selic e inflação">
+          <img src="/assets/img/c-series.webp" alt="Selic meta e inflação de preços livres em 12 meses, de 1996 a 2026" width="1093" height="795">
+        </button>
+        <h3 class="h3--lg">Selic e inflação, trinta anos num só gráfico</h3>
+      </article>
+      <article class="story story--rule">
+        <p class="meta"><span class="tag">Previsão</span><span>Próximos 12 meses</span></p>
+        <h3 class="h3--lg">Para onde vai o IPCA?</h3>
+        <p>Modelos testados contra o que de fato aconteceu: o app mostra o erro de cada previsão antes de você confiar nela.</p>
+      </article>
+      <article class="story story--rule">
+        <p class="meta"><span class="tag">Assistente</span><span>Moettá IA</span></p>
+        <h3 class="h3--lg">Pergunte em português. Receba o gráfico.</h3>
+      </article>
+    </div>
+  </div>
+
+  <dl class="figures">
+    <div><dt>30 anos</dt><dd>de dados mensais do Plano Real até hoje</dd></div>
+    <div><dt>110+</dt><dd>séries prontas: inflação, juros, câmbio, crédito, bolsa</dd></div>
+    <div><dt>1 clique</dt><dd>para atualizar a base inteira com os dados mais recentes</dd></div>
+    <div><dt>PT · EN</dt><dd>interface e leituras em português e inglês</dd></div>
+  </dl>
+</section>
+
+<!-- ================= PARA QUEM ================= -->
+<section class="audience wrap">
+  <div class="rowhead">
+    <h2 class="rowhead__title">Para quem</h2>
+    <p class="rowhead__meta">Do primeiro gráfico ao modelo publicado</p>
+  </div>
+  <div class="audience__grid">
+    <article><h3>Estudantes</h3><p>Monte a base do TCC ou da dissertação em minutos, com as fontes citáveis e cada passo registrado.</p></article>
+    <article><h3>Professores</h3><p>Mostre em sala o que a regressão diz e o que ela não diz, com leituras escritas ao lado de cada tabela.</p></article>
+    <article><h3>Analistas e economistas</h3><p>VAR, VECM, ARIMA, regimes, previsão fora da amostra: o arsenal do dia a dia, sem escrever código.</p></article>
+    <article><h3>Jornalistas e curiosos</h3><p>Inflação, juros e câmbio desde 1996, direto do Banco Central e do IBGE, num gráfico que você mesmo monta.</p></article>
+  </div>
+</section>
+
+<!-- ================= SOFTWARE ================= -->
+<section class="section wrap" id="software">
+  <div class="rowhead">
+    <h2 class="rowhead__title">O software</h2>
+    <p class="rowhead__meta">Windows · PT / EN · sem servidor</p>
+  </div>
+  <div class="statement">
+    <p class="statement__big">Um laboratório econométrico completo que percorre o ciclo inteiro de um estudo quantitativo — <em>busca os dados, trata, deriva, estima, prevê e avalia</em> — no seu computador.</p>
+    <div class="principles">
+      <article>
+        <span class="num">01</span>
+        <h3>O motor calcula, a interface desenha</h3>
+        <p>Cálculo e interface vivem separados. Todo número vem de rotinas auditáveis sobre statsmodels, scipy e scikit-learn.</p>
+      </article>
+      <article>
+        <span class="num">02</span>
+        <h3>Reprodutível por construção</h3>
+        <p>Transformações e fórmulas viajam nos metadados da base. Ao atualizar, cada coluna derivada é recalculada a partir da origem.</p>
+      </article>
+      <article>
+        <span class="num">03</span>
+        <h3>Verificado a cada mudança</h3>
+        <p>Uma bateria de testes confere o motor e registra a impressão digital do código; o app avisa quando algo mudou.</p>
+      </article>
+    </div>
+  </div>
+
+  <ol class="flow" aria-label="Fluxo de trabalho">
+    <li><span>Dados</span>Extração</li>
+    <li>Tratamento</li>
+    <li>Acervo</li>
+    <li>Atualização</li>
+    <li><span>Análise</span>Visualização</li>
+    <li>Estimação</li>
+    <li>Predição</li>
+  </ol>
+</section>
+
+<!-- ================= FUNCIONALIDADES ================= -->
+<section class="section section--tint" id="funcionalidades">
+  <div class="wrap">
+    <div class="rowhead">
+      <h2 class="rowhead__title">Funcionalidades</h2>
+      <p class="rowhead__meta">Capturas da versão atual, com dados reais de 1996 a 2026</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Telas do software">
+      <button role="tab" aria-selected="true" data-img="regressao" data-cap="Regressão com erros HC3 ou HAC (Newey-West), VIF, Ljung-Box, Jarque-Bera, Breusch-Pagan e Durbin-Watson, num só painel.">Regressão</button>
+      <button role="tab" aria-selected="false" data-img="leitura" data-cap="A mesma regressão, lida em prosa: o que cada coeficiente diz, com que confiança, e o que a amostra não permite afirmar.">Leitura em prosa</button>
+      <button role="tab" aria-selected="false" data-img="previsao" data-cap="Previsão SARIMA com intervalo, trecho de teste e métricas fora da amostra: RMSE, MAE, U de Theil e cobertura.">Predição</button>
+      <button role="tab" aria-selected="false" data-img="modelo-proprio" data-cap="Escreva o modelo com fórmulas — lag(), diff(), log(), interações — e avalie-o um passo à frente contra o passeio aleatório.">Modelo próprio</button>
+      <button role="tab" aria-selected="false" data-img="regimes" data-cap="Mudança de regime de Markov: a série com o regime dominante e as probabilidades suavizadas de cada estado.">Regimes de Markov</button>
+      <button role="tab" aria-selected="false" data-img="series" data-cap="Séries no tempo com eixo secundário, painéis separados, zoom por retângulo e cursor com valores.">Séries</button>
+      <button role="tab" aria-selected="false" data-img="analise-tecnica" data-cap="Velas mensais, médias, Bollinger, MACD, RSI, ATR e ADX, com leitura técnica da última observação.">Análise técnica</button>
+      <button role="tab" aria-selected="false" data-img="componentes" data-cap="Componentes principais com variância explicada, cargas, componentes no tempo e gravação dos fatores no acervo.">Componentes principais</button>
+      <button role="tab" aria-selected="false" data-img="extracao" data-cap="Catálogo agrupado por tema, com pesquisa por nome, código, fonte ou tema, e prazos da curva DI à escolha.">Extração</button>
+    </div>
+
+    <figure class="stage">
+      <button class="frame" data-lightbox aria-label="Ampliar imagem">
+        <img class="js-stage-img" src="/assets/img/regressao.webp" alt="Tela do Moettá: Regressão" width="1900" height="1055" loading="lazy">
+      </button>
+      <figcaption>
+        <span class="js-stage-title">Regressão</span>
+        <span class="js-stage-cap">Regressão com erros HC3 ou HAC (Newey-West), VIF, Ljung-Box, Jarque-Bera, Breusch-Pagan e Durbin-Watson, num só painel.</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= EM DETALHE ================= -->
+<section class="section wrap">
+  <div class="rowhead">
+    <h2 class="rowhead__title">Em detalhe</h2>
+    <p class="rowhead__meta">Gráficos desenhados pelo próprio app, sem bibliotecas externas</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <button class="card__img" data-lightbox data-src="/assets/img/correlacao.webp" aria-label="Ampliar"><img src="/assets/img/c-correlacao.webp" alt="Matriz de correlação de seis séries" loading="lazy" width="1093" height="760"></button>
+      <p class="meta"><span class="tag">Visualização</span><span>Correlação</span></p>
+      <h3>Pearson e Spearman, com o alerta certo</h3>
+      <p>A leitura lembra que correlação em nível não é relação econômica antes do diagnóstico de estacionariedade.</p>
+    </article>
+    <article class="card">
+      <button class="card__img" data-lightbox data-src="/assets/img/regimes.webp" aria-label="Ampliar"><img src="/assets/img/c-regimes.webp" alt="Regimes de Markov no crescimento do saldo de crédito" loading="lazy" width="1070" height="725"></button>
+      <p class="meta"><span class="tag">Estimação</span><span>Regimes</span></p>
+      <h3>Ciclos de crédito, datados pelo modelo</h3>
+      <p>Dois regimes no crescimento do saldo de crédito, com as probabilidades de cada mês.</p>
+    </article>
+    <article class="card">
+      <button class="card__img" data-lightbox data-src="/assets/img/analise-tecnica.webp" aria-label="Ampliar"><img src="/assets/img/c-tecnica.webp" alt="Análise técnica do Ibovespa com MACD e RSI" loading="lazy" width="1083" height="690"></button>
+      <p class="meta"><span class="tag">Visualização</span><span>Análise técnica</span></p>
+      <h3>Ibovespa em velas mensais, com MACD e RSI</h3>
+      <p>Indicadores gravados no acervo e recalculados a cada atualização.</p>
+    </article>
+    <article class="card">
+      <button class="card__img" data-lightbox data-src="/assets/img/triangulo.webp" aria-label="Ampliar"><img src="/assets/img/c-triangulo.webp" alt="Estrutura de produção por estágio, 01/2012 contra 12/2019" loading="lazy" width="1091" height="745"></button>
+      <p class="meta"><span class="tag">Ciclo e estrutura</span><span>Triângulo de Hayek</span></p>
+      <h3>A estrutura de produção, comparada em duas datas</h3>
+      <p>Dos bens de capital aos não duráveis, a partir dos índices de produção por categoria de uso do IBGE.</p>
+    </article>
+    <article class="card">
+      <button class="card__img" data-lightbox data-src="/assets/img/leitura.webp" aria-label="Ampliar"><img src="/assets/img/c-leitura.webp" alt="Leitura em prosa de uma regressão" loading="lazy" width="1062" height="683"></button>
+      <p class="meta"><span class="tag">Estimação</span><span>Leitura</span></p>
+      <h3>Um parecer técnico ao lado de cada tabela</h3>
+      <p>Coeficientes, significância e limites da amostra, explicados em português ou inglês.</p>
+    </article>
+    <article class="card">
+      <button class="card__img" data-lightbox data-src="/assets/img/modelo-proprio.webp" aria-label="Ampliar"><img src="/assets/img/c-proprio.webp" alt="Previsão um passo à frente contra o passeio aleatório" loading="lazy" width="1007" height="363"></button>
+      <p class="meta"><span class="tag">Estimação</span><span>Modelo próprio</span></p>
+      <h3>Seu modelo contra o passeio aleatório</h3>
+      <p>Previsão genuína fora da amostra, com lag() garantindo que nada do futuro entra no ajuste.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ================= MÓDULOS ================= -->
+<section class="section section--tint" id="modulos">
+  <div class="wrap">
+    <div class="rowhead">
+      <h2 class="rowhead__title">Módulos</h2>
+      <p class="rowhead__meta">Dez telas, na ordem de um estudo</p>
+    </div>
+    <div class="modules">
+      <div class="modules__col">
+        <p class="modules__label">Dados</p>
+        <div class="mod"><h3>Extração</h3><p>SGS e Focus (BCB), SIDRA (IBGE), curva DI da B3 de 1 mês a 10 anos, FRED e Yahoo Finance: atividade, crédito, juros, câmbio, commodities, bolsas e criptoativos.</p></div>
+        <div class="mod"><h3>Tratamento</h3><p>Redução ao mês, Focus por horizonte, ajuste sazonal X-13ARIMA-SEATS com STL de reserva, interpolação, defasagens e recorte, guardados em presets.</p></div>
+        <div class="mod"><h3>Acervo</h3><p>Cobertura, transformações, operações por fórmula, juros reais, hiato e dispersão, renomeação, exportação e versões no SQL Server.</p></div>
+        <div class="mod"><h3>Atualização</h3><p>Reconhece a origem de cada coluna, derivada ou não, e a recalcula com os dados mais recentes.</p></div>
+      </div>
+      <div class="modules__col">
+        <p class="modules__label">Análise</p>
+        <div class="mod"><h3>Visualização</h3><p>Séries, correlação, análise técnica, fases do ciclo e triângulo de Hayek. Expectativas desenhadas na data-alvo.</p></div>
+        <div class="mod"><h3>Estimação</h3><p>Diagnóstico, regressão, cointegração, VAR, VECM, ARIMA/SARIMA, componentes principais, seleção de variáveis, projeções locais, Granger, ARDL, regimes de Markov e modelo próprio.</p></div>
+        <div class="mod"><h3>Predição</h3><p>AR/ARIMA/SARIMA, regressão, regularizada, VAR/VECM, fatores e eventos por Probit/Logit, com comparação fora da amostra.</p></div>
+      </div>
+      <div class="modules__col">
+        <p class="modules__label">Sistema e ajuda</p>
+        <div class="mod"><h3>Configuração</h3><p>Presets, X-13, configurações salvas, repositório, banco de dados, assistente e aparência: dez temas, fontes e idioma.</p></div>
+        <div class="mod"><h3>Verificação</h3><p>Bateria de testes do motor com impressão digital do código e registro da última verificação aprovada.</p></div>
+        <div class="mod"><h3>Manual</h3><p>Dez seções com pesquisa: fontes, fluxo, guia dos modelos, interpretações comentadas, glossário e armadilhas comuns.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MÉTODOS ================= -->
+<section class="section wrap" id="metodos">
+  <div class="rowhead">
+    <h2 class="rowhead__title">Métodos</h2>
+    <p class="rowhead__meta">Com os diagnósticos que os acompanham por padrão</p>
+  </div>
+  <div class="spec">
+    <div class="spec__row"><span>Estacionariedade</span><p>ADF, KPSS, ordem de integração, ACF e PACF</p></div>
+    <div class="spec__row"><span>Regressão</span><p>MQO com erros HC3 e HAC, VIF, diagnóstico de resíduos</p></div>
+    <div class="spec__row"><span>Cointegração</span><p>Engle-Granger, Johansen, VECM</p></div>
+    <div class="spec__row"><span>Sistemas</span><p>VAR com seleção de defasagens, impulso-resposta, FEVD, Granger, estabilidade</p></div>
+    <div class="spec__row"><span>Univariados</span><p>ARMA, ARIMA, SARIMA com sugestão automática de ordem</p></div>
+    <div class="spec__row"><span>Dinâmicos</span><p>ARDL com curto e longo prazo, projeções locais, regimes de Markov</p></div>
+    <div class="spec__row"><span>Fatores e seleção</span><p>PCA, LASSO, Ridge, rede elástica com validação temporal, seleção por estabilidade</p></div>
+    <div class="spec__row"><span>Eventos</span><p>Probit e Logit para a probabilidade de eventos definidos pelo usuário</p></div>
+    <div class="spec__row"><span>Avaliação</span><p>RMSE, MAE, U de Theil, cobertura de intervalos, Diebold-Mariano</p></div>
+    <div class="spec__row"><span>Ciclo e estrutura</span><p>Hiato de juros, razão entre estágios, dispersão de preços relativos, fases do ciclo, triângulo de Hayek</p></div>
+    <div class="spec__row"><span>Técnica</span><p>Médias móveis, MACD, RSI, Bollinger, ATR, ADX</p></div>
+  </div>
+</section>
+
+<!-- ================= IA ================= -->
+<section class="section section--tint" id="ia">
+  <div class="wrap">
+    <div class="rowhead">
+      <h2 class="rowhead__title">Assistente</h2>
+      <p class="rowhead__meta">Moettá IA e Moettá Dev</p>
+    </div>
+    <div class="ia">
+      <div>
+        <h3 class="display">O modelo de linguagem propõe. O motor calcula.</h3>
+        <p class="lede">Um painel de conversa acompanha qualquer tela. Peça uma extração, um teste de raiz unitária ou uma previsão: o assistente chama as ferramentas do próprio app, e cada chamada aparece no chat com parâmetros e resultado.</p>
+        <ul class="checks">
+          <li>Nenhum número é produzido pelo modelo de linguagem — todos vêm do motor.</li>
+          <li>Ações que gravam, apagam ou substituem dados pedem confirmação.</li>
+          <li>Só nomes de séries, metadados e resumos são enviados; a base não sai do computador.</li>
+          <li>Registro de cada conversa, com a versão do motor e os dados de entrada.</li>
+        </ul>
+      </div>
+      <div class="ia__side">
+        <div class="chat">
+          <p class="chat__me">Teste se o IPCA mensal é estacionário e, se for, estime um ARIMA.</p>
+          <div class="chat__tool"><code>testar_raiz_unitaria</code><b>ok</b><small>ipca_var_mensal_pct · ADF e KPSS</small></div>
+          <div class="chat__tool"><code>estimar_arima</code><b>ok</b><small>ordem sugerida por AIC · resíduos diagnosticados</small></div>
+          <p class="chat__ai">Os dois testes apontam a série como estacionária em nível. O ARIMA escolhido deixa resíduos sem autocorrelação significativa (Ljung-Box)…</p>
+        </div>
+        <div class="dev">
+          <p class="meta"><span class="tag tag--gold">Moettá Dev</span><span>Modo Desenvolver</span></p>
+          <p>O assistente propõe alterações no código do próprio app como um diff. Nada é gravado sem o seu clique; a bateria de testes roda a cada mudança e tudo se reverte em um clique.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLANOS ================= -->
+<section class="section wrap" id="planos">
+  <div class="rowhead">
+    <h2 class="rowhead__title">Planos</h2>
+    <div class="billing" role="group" aria-label="Período de cobrança">
+      <button class="is-on" data-billing="mensal">Mensal</button>
+      <button data-billing="anual">Anual · −20%</button>
+    </div>
+  </div>
+  <p class="plans__intro">Três edições, um só motor econométrico. A diferença está no assistente.</p>
+
+  <div class="plans">
+    <article class="plan">
+      <h3 class="lockup lockup--plan">
+        <img class="lockup__logo" src="/assets/marca/moetta-128.png" alt="" width="52" height="52">
+        <span class="lockup__txt"><img class="lockup__nome" src="/assets/marca/moetta-nome.svg" alt="Moettá" width="115" height="30"></span>
+      </h3>
+      <p class="plan__desc">O laboratório completo, para estudo e pesquisa individual.</p>
+      <p class="plan__price"><span class="cur">R$</span><span class="js-price" data-m="59" data-a="47">59</span><span class="per">/mês</span></p>
+      <a href="#contato" class="btn btn--line btn--block">Começar</a>
+      <ul>
+        <li>Todas as fontes e o catálogo completo</li>
+        <li>Tratamento, acervo e atualização</li>
+        <li>Estimação e predição com leitura em prosa</li>
+        <li>Ciclo, estrutura de produção e análise técnica</li>
+        <li>Exportação xlsx/csv e SQL Server</li>
+        <li>Dez temas, PT e EN</li>
+      </ul>
+    </article>
+    <article class="plan plan--featured">
+      <p class="plan__flag">Mais escolhido</p>
+      <h3 class="lockup lockup--plan">
+        <img class="lockup__logo" src="/assets/marca/moetta-ia-128.png" alt="" width="52" height="52">
+        <span class="lockup__txt"><img class="lockup__nome" src="/assets/marca/moetta-nome-claro.svg" alt="Moettá" width="100" height="26"><b class="lockup__suf lockup__suf--claro">IA</b></span>
+      </h3>
+      <p class="plan__desc">O laboratório com um assistente que opera o app por você.</p>
+      <p class="plan__price"><span class="cur">R$</span><span class="js-price" data-m="119" data-a="95">119</span><span class="per">/mês</span></p>
+      <a href="#contato" class="btn btn--light btn--block">Começar</a>
+      <ul>
+        <li><strong>Tudo do Moettá</strong></li>
+        <li>Painel de IA em qualquer tela</li>
+        <li>Extração, transformações e modelos por conversa</li>
+        <li>Respostas sobre o app a partir do manual</li>
+        <li>Confirmação explícita de ações sensíveis</li>
+        <li>Registro auditável das sessões</li>
+      </ul>
+    </article>
+    <article class="plan">
+      <h3 class="lockup lockup--plan">
+        <img class="lockup__logo" src="/assets/marca/moetta-dev-128.png" alt="" width="52" height="52">
+        <span class="lockup__txt"><img class="lockup__nome" src="/assets/marca/moetta-nome.svg" alt="Moettá" width="100" height="26"><b class="lockup__suf">Dev</b></span>
+      </h3>
+      <p class="plan__desc">Para quem quer estender o software com novas telas e métodos.</p>
+      <p class="plan__price"><span class="cur">R$</span><span class="js-price" data-m="219" data-a="175">219</span><span class="per">/mês</span></p>
+      <a href="#contato" class="btn btn--line btn--block">Começar</a>
+      <ul>
+        <li><strong>Tudo do Moettá IA</strong></li>
+        <li>Modo Desenvolver: alterações propostas como diff</li>
+        <li>Criação de telas novas na barra lateral</li>
+        <li>Verificação automática a cada alteração</li>
+        <li>Cópias de segurança e reversão em um clique</li>
+        <li>Ambiente restrito à pasta do app</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="institutional">
+    <div>
+      <h3>Institucional</h3>
+      <p>Universidades, consultorias e equipes de research: licenças em volume, instalação assistida e treinamento.</p>
+    </div>
+    <a href="#contato" class="btn btn--line">Falar com a equipe</a>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section class="cta" id="contato">
+  <div class="wrap cta__inner">
+    <div class="editions" aria-label="As três edições do Moettá">
+      <img src="/assets/marca/moetta-128.png" alt="Moettá" width="64" height="64">
+      <img src="/assets/marca/moetta-ia-128.png" alt="Moettá IA" width="64" height="64">
+      <img src="/assets/marca/moetta-dev-128.png" alt="Moettá Dev" width="64" height="64">
+    </div>
+    <h2>Pronto para modelar com método?</h2>
+    <p class="lede">O Moettá está em fase de apresentação. Deixe seu e-mail para receber acesso antecipado e o working paper que descreve a metodologia.</p>
+    <form class="cta__form" onsubmit="event.preventDefault(); this.classList.add('is-sent');">
+      <label class="sr-only" for="email">E-mail</label>
+      <input id="email" type="email" placeholder="seu@email.com" required>
+      <button class="btn btn--dark" type="submit">Solicitar acesso</button>
+      <p class="cta__thanks">Obrigado. Entraremos em contato em breve.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div>
+      <a href="#topo" class="lockup lockup--foot" aria-label="Moettá, início"><img class="lockup__logo" src="/assets/marca/moetta-128.png" alt="" width="36" height="36"><img class="lockup__nome" src="/assets/marca/moetta-nome-claro.svg" alt="Moettá" width="92" height="24"></a>
+      <p class="footer__note">Software de econometria e modelagem quantitativa.</p>
+    </div>
+    <div><p class="footer__h">Produto</p><a href="#software">Software</a><a href="#funcionalidades">Funcionalidades</a><a href="#modulos">Módulos</a><a href="#metodos">Métodos</a></div>
+    <div><p class="footer__h">Edições</p><a href="#planos">Moettá</a><a href="#planos">Moettá IA</a><a href="#planos">Moettá Dev</a><a href="#planos">Institucional</a></div>
+    <div><p class="footer__h">Contato</p><a href="#contato">Solicitar acesso</a><a href="#contato">Working paper</a></div>
+  </div>
+  <div class="wrap footer__base"><span>© 2026 Moettá</span><span>Windows · Português e inglês</span></div>
+</footer>
+
+<div class="lightbox" hidden>
+  <button class="lightbox__close" aria-label="Fechar">×</button>
+  <img alt="">
+</div>
+
+<script src="/main.js?v=3" defer></script>
+</body>
+</html>
