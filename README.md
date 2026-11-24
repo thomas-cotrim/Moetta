@@ -28,6 +28,19 @@ Pelo site: *Add New › Project*, importe o repositório e defina **Root Directo
 
 Pela linha de comando (precisa do Node): `npm i -g vercel`, depois `vercel` dentro desta pasta.
 
+## Versões
+
+Esta é a versão de divulgação (projeto de pesquisa, sem preços), publicada no GitHub Pages. A versão comercial, com planos e preços, está guardada em `../Site_versao_comercial_backup_2026-11-23`.
+
+## Editar os textos
+
+Todo o texto está em `index.html`, em HTML simples. Procure (Ctrl+F) a frase que quer mudar, troque só o texto entre as marcas (`<p>…</p>`, `<h3>…</h3>`), salve e publique de novo. Pendências marcadas com `EDITE:`:
+
+- **Foto:** salve uma imagem quadrada como `assets/img/autor.jpg`. Sem ela, aparecem as iniciais "TC".
+- **LinkedIn e e-mail:** preencha o `href=""` dos botões; enquanto estiver vazio, o botão fica oculto.
+
+Depois de mudar `styles.css` ou `main.js`, aumente o número em `?v=` no `index.html` para o navegador não usar a versão antiga.
+
 ## Marca
 
 `assets/marca/` vem do próprio app: as logos de cada edição (`moetta`, `moetta-ia`, `moetta-dev`, de `interface/marca/logo.png` de cada pasta) e o logotipo "Moettá" (`moetta-nome.svg`, desenho monolinear de `interface/logotipo.py`, com os dois "t" unidos e o acento em verde-água). O sufixo da edição ("IA", "DEV") segue o app: fonte de largura fixa, negrito, em maiúsculas espaçadas. Para regerar depois de mudar a marca, em `Site/_captura`:

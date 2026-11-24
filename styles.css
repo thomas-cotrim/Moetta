@@ -113,6 +113,49 @@ p { margin: 0; }
 .editions { display: flex; gap: 14px; margin-bottom: 30px; }
 .editions img { width: 64px; height: 64px; border-radius: 50%; box-shadow: 0 6px 18px -8px rgba(0, 0, 0, .45); }
 
+/* links ainda não preenchidos (href="") ficam ocultos */
+a[href=""] { display: none !important; }
+
+/* potencial de pesquisa */
+.research__intro { font-family: var(--serif); font-size: clamp(24px, 2.4vw, 34px); line-height: 1.22; max-width: 34ch; margin-bottom: 44px; }
+.research__intro em { color: var(--blue); }
+.research { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 20px; }
+.research article { padding: 26px 0 30px; border-top: 1px solid var(--rule-strong); }
+.research .num { display: block; font-size: 13px; color: var(--muted); margin-bottom: 14px; font-variant-numeric: tabular-nums; }
+.research h3 { font-size: 22px; margin-bottom: 10px; }
+.research p { color: var(--ink-2); font-size: 16px; }
+.research .research__tools { margin-top: 14px; font-size: 13.5px; color: var(--teal); font-weight: 500; }
+
+/* working paper */
+.paper { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 64px; }
+.paper .display { margin: 0 0 18px; }
+.paper__author { font-family: var(--serif); font-size: 22px; color: var(--ink-2); }
+.paper__body { display: grid; gap: 16px; font-family: var(--serif); font-size: 19px; line-height: 1.55; color: var(--ink-2); }
+.paper__body .paper__note { font-family: var(--sans); font-size: 15px; color: var(--muted); padding-top: 14px; border-top: 1px solid var(--rule); }
+.paper__body a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+
+/* edições, sem preços */
+.editions-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.editions-grid article { background: var(--paper); border-radius: 14px; padding: 30px; box-shadow: 0 0 0 1px var(--rule-strong); }
+.editions-grid h3 { margin-bottom: 18px; }
+.editions-grid p { color: var(--ink-2); font-size: 15.5px; }
+
+/* sobre o autor */
+.author { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 64px; align-items: start; }
+.author__photo {
+  position: relative; aspect-ratio: 1; border-radius: 12px; overflow: hidden;
+  background: linear-gradient(145deg, #1D4F86, #0E2747); display: grid; place-items: center;
+}
+.author__photo span { font-family: var(--head); font-weight: 600; font-size: 72px; color: rgba(255, 255, 255, .85); letter-spacing: -.02em; }
+.author__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.author .display { margin-bottom: 8px; }
+.author__role { color: var(--muted); font-size: 16px; margin-bottom: 26px; }
+.author__text > p:not(.author__role) { font-size: 17.5px; color: var(--ink-2); margin-bottom: 16px; max-width: 64ch; }
+.author__tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 26px 0; }
+.author__tags li { padding: 4px 12px; border-radius: 999px; background: var(--pill); font-size: 14px; color: var(--ink-2); }
+.author__links, .cta__links { display: flex; flex-wrap: wrap; gap: 10px; }
+.cta__links { justify-content: center; margin-top: 34px; }
+
 /* para quem */
 .audience { padding-top: clamp(64px, 7vw, 96px); }
 .audience__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
@@ -329,6 +372,9 @@ p { margin: 0; }
   .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .spec { grid-template-columns: 1fr; }
   .audience__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 20px; }
+  .research { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .paper, .author { grid-template-columns: 1fr; gap: 36px; }
+  .author__photo { max-width: 320px; }
 }
 
 @media (max-width: 860px) {
@@ -338,6 +384,7 @@ p { margin: 0; }
   .lockup--nav .lockup__logo { width: 34px; height: 34px; }
   .lockup--nav .lockup__nome { height: 25px; }
   .audience__grid { grid-template-columns: 1fr; gap: 26px; }
+  .research, .editions-grid { grid-template-columns: 1fr; }
   .nav__toggle { display: inline-grid; }
   .lead { padding-top: 24px; }
   .lead__col:first-child, .lead__col:last-child { grid-template-columns: 1fr; gap: 0; }

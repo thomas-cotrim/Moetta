@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moettá — Econometria e modelagem quantitativa</title>
-  <meta name="description" content="Moettá é um software de econometria e modelagem quantitativa: extração de dados oficiais, tratamento, estimação, predição e leitura dos resultados em prosa, numa janela nativa.">
+  <title>Moettá — Pesquisa em macroeconomia aplicada</title>
+  <meta name="description" content="Moettá é um projeto de pesquisa de Thomas Cotrim: um ambiente integrado e verificável para análise macroeconômica aplicada, do dado oficial ao resultado replicável.">
   <meta name="theme-color" content="#F7F6F2">
-  <meta property="og:title" content="Moettá — Econometria e modelagem quantitativa">
-  <meta property="og:description" content="Do dado oficial à leitura do resultado. Extração, tratamento, estimação e predição num só lugar.">
-  <meta property="og:image" content="/assets/img/previsao.webp">
+  <meta property="og:title" content="Moettá — Pesquisa em macroeconomia aplicada">
+  <meta property="og:description" content="Um ambiente integrado e verificável para análise macroeconômica aplicada. Projeto de pesquisa de Thomas Cotrim.">
+  <meta property="og:image" content="assets/img/previsao.webp">
   <link rel="icon" href="assets/marca/favicon.ico" sizes="any">
   <link rel="icon" href="assets/marca/moetta-128.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/marca/moetta-512.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -23,18 +23,18 @@
 <header class="nav" id="topo">
   <div class="wrap nav__inner">
     <nav class="nav__left" aria-label="Seções">
-      <a class="pill" href="#software">Software</a>
-      <a class="pill" href="#funcionalidades">Funcionalidades</a>
-      <a class="pill" href="#modulos">Módulos</a>
+      <a class="pill" href="#pesquisa">Pesquisa</a>
+      <a class="pill" href="#funcionalidades">Software</a>
       <a class="pill" href="#metodos">Métodos</a>
+      <a class="pill" href="#working-paper">Working paper</a>
     </nav>
     <a href="#topo" class="lockup lockup--nav" aria-label="Moettá, início">
       <img class="lockup__logo" src="assets/marca/moetta-128.png" alt="" width="40" height="40">
       <img class="lockup__nome" src="assets/marca/moetta-nome.svg" alt="Moettá" width="115" height="30">
     </a>
     <div class="nav__right">
-      <a class="pill" href="#planos">Planos</a>
-      <a class="pill pill--dark" href="#contato">Solicitar acesso</a>
+      <a class="pill" href="#autor">Sobre o autor</a>
+      <a class="pill pill--dark" href="#contato">Contato</a>
       <button class="icon-btn nav__toggle" aria-label="Abrir menu" aria-expanded="false">
         <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 9h14M2 13h9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </button>
@@ -42,8 +42,8 @@
   </div>
   <div class="drawer" hidden>
     <div class="wrap drawer__inner">
-      <a href="#software">Software</a><a href="#funcionalidades">Funcionalidades</a><a href="#modulos">Módulos</a>
-      <a href="#metodos">Métodos</a><a href="#ia">Assistente</a><a href="#planos">Planos</a><a href="#contato">Solicitar acesso</a>
+      <a href="#pesquisa">Pesquisa</a><a href="#funcionalidades">Software</a><a href="#metodos">Métodos</a>
+      <a href="#working-paper">Working paper</a><a href="#ia">Assistente</a><a href="#autor">Sobre o autor</a><a href="#contato">Contato</a>
     </div>
   </div>
 </header>
@@ -53,81 +53,115 @@
 <!-- ================= DESTAQUES (grade editorial) ================= -->
 <section class="lead wrap">
   <div class="rowhead">
-    <h2 class="rowhead__title">Em destaque</h2>
-    <p class="rowhead__meta">Novembro de 2026</p>
+    <h2 class="rowhead__title">Projeto de pesquisa</h2>
+    <p class="rowhead__meta">Em desenvolvimento · novembro de 2026</p>
   </div>
 
   <div class="lead__grid">
     <!-- coluna esquerda -->
     <div class="lead__col">
       <article class="story">
-        <p class="meta"><span class="tag">Inflação</span><span>Expectativas do mercado</span></p>
+        <p class="meta"><span class="tag">Expectativas</span><span>Boletim Focus</span></p>
         <button class="story__img" data-lightbox data-src="assets/img/expectativas.webp" aria-label="Ampliar tela das expectativas de inflação">
           <img src="assets/img/c-expectativas.webp" alt="Expectativas Focus para o IPCA desenhadas no ano a que se referem, até 2030" width="1093" height="565">
         </button>
-        <h3>O que o mercado espera para a inflação, até 2030</h3>
-        <p>As projeções do boletim Focus, do Banco Central, desenhadas no ano a que se referem — com a data em que cada uma foi feita.</p>
+        <h3>Expectativas de inflação na data a que se referem</h3>
+        <p>Cada projeção do Focus é desenhada no ano-alvo, com a data em que foi feita: a base para estudar credibilidade e erros de expectativa.</p>
       </article>
       <article class="story story--rule">
-        <p class="meta"><span class="tag">Dados</span><span>Direto da fonte</span></p>
-        <h3>Banco Central, IBGE e B3 em um clique, sem baixar planilha</h3>
+        <p class="meta"><span class="tag">Replicabilidade</span><span>O problema de partida</span></p>
+        <h3>Menos da metade dos artigos replicados sem ajuda dos autores</h3>
+        <p>Chang e Li (2015) tentaram replicar estudos de treze periódicos de economia. A preparação dos dados é onde a pesquisa mais se perde.</p>
       </article>
     </div>
 
     <!-- coluna central -->
     <div class="lead__col lead__col--main">
-      <p class="meta"><span class="tag">Moettá</span><span>Econometria para quem quer entender a economia</span></p>
+      <p class="meta"><span class="tag">Moettá</span><span>Um projeto de Thomas Cotrim, FEA-USP</span></p>
       <button class="feature-shot" data-lightbox data-src="assets/img/previsao.webp" aria-label="Ampliar tela de predição">
-        <img src="assets/img/previsao.webp" alt="Tela de Predição do Moettá: previsão do IPCA mensal para os próximos 12 meses, com intervalo de 95%" width="1900" height="1055" fetchpriority="high">
+        <img src="assets/img/previsao.webp" alt="Tela de Predição do Moettá: previsão do IPCA mensal com intervalo de 95% e avaliação fora da amostra" width="1900" height="1055" fetchpriority="high">
       </button>
-      <h1>Entenda a economia com dados oficiais — e respostas claras.</h1>
-      <p class="lede">Inflação, juros, câmbio, crédito, atividade. O Moettá busca as séries no Banco Central, no IBGE e na B3, desenha os gráficos, projeta os próximos meses e explica cada resultado em português. Do estudante ao economista.</p>
+      <h1>Um laboratório de pesquisa em macroeconomia aplicada.</h1>
+      <p class="lede">O Moettá reúne numa só cadeia, verificável e reexecutável, o percurso de uma pesquisa com séries temporais: dados oficiais do Banco Central, do IBGE e da B3, tratamento, diagnóstico, estimação e avaliação de previsões fora da amostra. Projeto independente, desenvolvido durante a graduação em Economia.</p>
       <div class="actions">
-        <a href="#contato" class="btn btn--dark">Solicitar acesso</a>
-        <a href="#funcionalidades" class="btn btn--line">Ver o software</a>
+        <a href="#pesquisa" class="btn btn--dark">Agenda de pesquisa</a>
+        <a href="#autor" class="btn btn--line">Sobre o autor</a>
       </div>
     </div>
 
     <!-- coluna direita -->
     <div class="lead__col">
       <article class="story">
-        <p class="meta"><span class="tag">Juros</span><span>Desde o Plano Real</span></p>
+        <p class="meta"><span class="tag">Política monetária</span><span>1996–2026</span></p>
         <button class="story__img" data-lightbox data-src="assets/img/series.webp" aria-label="Ampliar tela de Selic e inflação">
           <img src="assets/img/c-series.webp" alt="Selic meta e inflação de preços livres em 12 meses, de 1996 a 2026" width="1093" height="795">
         </button>
-        <h3 class="h3--lg">Selic e inflação, trinta anos num só gráfico</h3>
+        <h3 class="h3--lg">Juros e inflação desde o Plano Real</h3>
       </article>
       <article class="story story--rule">
-        <p class="meta"><span class="tag">Previsão</span><span>Próximos 12 meses</span></p>
-        <h3 class="h3--lg">Para onde vai o IPCA?</h3>
-        <p>Modelos testados contra o que de fato aconteceu: o app mostra o erro de cada previsão antes de você confiar nela.</p>
+        <p class="meta"><span class="tag">Previsão</span><span>Fora da amostra</span></p>
+        <h3 class="h3--lg">Todo modelo contra uma referência ingênua</h3>
+        <p>RMSE, U de Theil e Diebold-Mariano: o ajuste dentro da amostra não basta.</p>
       </article>
       <article class="story story--rule">
-        <p class="meta"><span class="tag">Assistente</span><span>Moettá IA</span></p>
-        <h3 class="h3--lg">Pergunte em português. Receba o gráfico.</h3>
+        <p class="meta"><span class="tag">Working paper</span><span>Versão preliminar</span></p>
+        <h3 class="h3--lg"><a href="#working-paper">Um ambiente integrado e verificável →</a></h3>
       </article>
     </div>
   </div>
 
   <dl class="figures">
-    <div><dt>30 anos</dt><dd>de dados mensais do Plano Real até hoje</dd></div>
-    <div><dt>110+</dt><dd>séries prontas: inflação, juros, câmbio, crédito, bolsa</dd></div>
-    <div><dt>1 clique</dt><dd>para atualizar a base inteira com os dados mais recentes</dd></div>
-    <div><dt>PT · EN</dt><dd>interface e leituras em português e inglês</dd></div>
+    <div><dt>6</dt><dd>fontes públicas de dados integradas</dd></div>
+    <div><dt>110+</dt><dd>séries mensais desde o Plano Real</dd></div>
+    <div><dt>13</dt><dd>frentes de estimação, com diagnósticos</dd></div>
+    <div><dt>1 cadeia</dt><dd>do dado bruto ao resultado, registrada e reexecutável</dd></div>
   </dl>
 </section>
 
-<!-- ================= PARA QUEM ================= -->
-<section class="audience wrap">
+<!-- ================= POTENCIAL DE PESQUISA ================= -->
+<section class="section wrap" id="pesquisa">
   <div class="rowhead">
-    <h2 class="rowhead__title">Para quem</h2>
-    <p class="rowhead__meta">Do primeiro gráfico ao modelo publicado</p>
+    <h2 class="rowhead__title">Potencial de pesquisa</h2>
+    <p class="rowhead__meta">Perguntas que o Moettá já permite investigar</p>
   </div>
-  <div class="audience__grid">
-    <article><h3>Estudantes</h3><p>Monte a base do TCC ou da dissertação em minutos, com as fontes citáveis e cada passo registrado.</p></article>
-    <article><h3>Professores</h3><p>Mostre em sala o que a regressão diz e o que ela não diz, com leituras escritas ao lado de cada tabela.</p></article>
-    <article><h3>Analistas e economistas</h3><p>VAR, VECM, ARIMA, regimes, previsão fora da amostra: o arsenal do dia a dia, sem escrever código.</p></article>
-    <article><h3>Jornalistas e curiosos</h3><p>Inflação, juros e câmbio desde 1996, direto do Banco Central e do IBGE, num gráfico que você mesmo monta.</p></article>
+  <p class="research__intro">A contribuição é de método: reduzir o custo de chegar à primeira regressão <em>sem esconder as escolhas</em> que alteram o resultado.</p>
+  <div class="research">
+    <article>
+      <span class="num">01</span>
+      <h3>Transmissão da política monetária</h3>
+      <p>Como a Selic chega à inflação, ao crédito e à atividade. VAR, VECM e projeções locais sobre juros, curva DI e expectativas.</p>
+      <p class="research__tools">VAR · VECM · projeções locais · Granger</p>
+    </article>
+    <article>
+      <span class="num">02</span>
+      <h3>Ciclo de crédito e estrutura de produção</h3>
+      <p>Hiato de juros, razão entre estágios da produção e regimes de Markov para datar expansões e contrações — e testar a teoria austríaca do ciclo com dados brasileiros.</p>
+      <p class="research__tools">Markov · hiato de juros · triângulo de Hayek</p>
+    </article>
+    <article>
+      <span class="num">03</span>
+      <h3>Expectativas e credibilidade</h3>
+      <p>Projeções do Focus por horizonte, comparadas à inflação realizada no ano-alvo: viés, ancoragem e reação a choques.</p>
+      <p class="research__tools">Focus por horizonte · ARDL · eventos</p>
+    </article>
+    <article>
+      <span class="num">04</span>
+      <h3>Previsão macroeconômica</h3>
+      <p>Comparação sistemática de modelos univariados, multivariados, regularizados e de fatores contra o passeio aleatório.</p>
+      <p class="research__tools">SARIMA · LASSO · PCA · Diebold-Mariano</p>
+    </article>
+    <article>
+      <span class="num">05</span>
+      <h3>Replicabilidade da pesquisa aplicada</h3>
+      <p>Bases que carregam nos metadados cada transformação e fórmula, refeitas a partir da origem a cada atualização dos dados.</p>
+      <p class="research__tools">metadados · bateria de testes · verificação</p>
+    </article>
+    <article>
+      <span class="num">06</span>
+      <h3>Ensino de econometria</h3>
+      <p>Cada resultado vem com uma leitura em prosa do que os números dizem — e do que a amostra não permite afirmar.</p>
+      <p class="research__tools">leitura em prosa · manual · glossário</p>
+    </article>
   </div>
 </section>
 
@@ -333,78 +367,86 @@
   </div>
 </section>
 
-<!-- ================= PLANOS ================= -->
-<section class="section wrap" id="planos">
+<!-- ================= WORKING PAPER ================= -->
+<section class="section wrap" id="working-paper">
   <div class="rowhead">
-    <h2 class="rowhead__title">Planos</h2>
-    <div class="billing" role="group" aria-label="Período de cobrança">
-      <button class="is-on" data-billing="mensal">Mensal</button>
-      <button data-billing="anual">Anual · −20%</button>
+    <h2 class="rowhead__title">Working paper</h2>
+    <p class="rowhead__meta">Versão preliminar · novembro de 2026</p>
+  </div>
+  <div class="paper">
+    <div class="paper__head">
+      <p class="meta"><span class="tag">JEL</span><span>C32 · C53 · C87 · C88 · E32 · E43</span></p>
+      <h3 class="display">Moettá: um ambiente integrado e verificável para análise macroeconômica aplicada</h3>
+      <p class="paper__author">Thomas Cotrim</p>
+    </div>
+    <div class="paper__body">
+      <p>O trabalho apresenta o Moettá, um aplicativo de mesa, local e de código auditável, que reúne numa única cadeia a extração de séries macroeconômicas e financeiras de fontes públicas, o tratamento, o diagnóstico de estacionariedade, a estimação e a avaliação de previsões fora da amostra.</p>
+      <p>O desenho parte de três problemas documentados na literatura: a baixa replicabilidade da pesquisa aplicada, o custo de preparação de dados e a distância entre o ajuste dentro da amostra e o desempenho preditivo. Duas extensões são descritas: um módulo de análise do ciclo e um assistente de linguagem natural cuja arquitetura impede que qualquer número exibido provenha do modelo de linguagem.</p>
+      <p class="paper__note">A seção de resultados empíricos está em preparação. O texto completo pode ser pedido pelo <a href="#contato">contato</a>.</p>
     </div>
   </div>
-  <p class="plans__intro">Três edições, um só motor econométrico. A diferença está no assistente.</p>
+</section>
 
-  <div class="plans">
-    <article class="plan">
-      <h3 class="lockup lockup--plan">
-        <img class="lockup__logo" src="assets/marca/moetta-128.png" alt="" width="52" height="52">
-        <span class="lockup__txt"><img class="lockup__nome" src="assets/marca/moetta-nome.svg" alt="Moettá" width="115" height="30"></span>
-      </h3>
-      <p class="plan__desc">O laboratório completo, para estudo e pesquisa individual.</p>
-      <p class="plan__price"><span class="cur">R$</span><span class="js-price" data-m="59" data-a="47">59</span><span class="per">/mês</span></p>
-      <a href="#contato" class="btn btn--line btn--block">Começar</a>
-      <ul>
-        <li>Todas as fontes e o catálogo completo</li>
-        <li>Tratamento, acervo e atualização</li>
-        <li>Estimação e predição com leitura em prosa</li>
-        <li>Ciclo, estrutura de produção e análise técnica</li>
-        <li>Exportação xlsx/csv e SQL Server</li>
-        <li>Dez temas, PT e EN</li>
-      </ul>
-    </article>
-    <article class="plan plan--featured">
-      <p class="plan__flag">Mais escolhido</p>
-      <h3 class="lockup lockup--plan">
-        <img class="lockup__logo" src="assets/marca/moetta-ia-128.png" alt="" width="52" height="52">
-        <span class="lockup__txt"><img class="lockup__nome" src="assets/marca/moetta-nome-claro.svg" alt="Moettá" width="100" height="26"><b class="lockup__suf lockup__suf--claro">IA</b></span>
-      </h3>
-      <p class="plan__desc">O laboratório com um assistente que opera o app por você.</p>
-      <p class="plan__price"><span class="cur">R$</span><span class="js-price" data-m="119" data-a="95">119</span><span class="per">/mês</span></p>
-      <a href="#contato" class="btn btn--light btn--block">Começar</a>
-      <ul>
-        <li><strong>Tudo do Moettá</strong></li>
-        <li>Painel de IA em qualquer tela</li>
-        <li>Extração, transformações e modelos por conversa</li>
-        <li>Respostas sobre o app a partir do manual</li>
-        <li>Confirmação explícita de ações sensíveis</li>
-        <li>Registro auditável das sessões</li>
-      </ul>
-    </article>
-    <article class="plan">
-      <h3 class="lockup lockup--plan">
-        <img class="lockup__logo" src="assets/marca/moetta-dev-128.png" alt="" width="52" height="52">
-        <span class="lockup__txt"><img class="lockup__nome" src="assets/marca/moetta-nome.svg" alt="Moettá" width="100" height="26"><b class="lockup__suf">Dev</b></span>
-      </h3>
-      <p class="plan__desc">Para quem quer estender o software com novas telas e métodos.</p>
-      <p class="plan__price"><span class="cur">R$</span><span class="js-price" data-m="219" data-a="175">219</span><span class="per">/mês</span></p>
-      <a href="#contato" class="btn btn--line btn--block">Começar</a>
-      <ul>
-        <li><strong>Tudo do Moettá IA</strong></li>
-        <li>Modo Desenvolver: alterações propostas como diff</li>
-        <li>Criação de telas novas na barra lateral</li>
-        <li>Verificação automática a cada alteração</li>
-        <li>Cópias de segurança e reversão em um clique</li>
-        <li>Ambiente restrito à pasta do app</li>
-      </ul>
-    </article>
-  </div>
-
-  <div class="institutional">
-    <div>
-      <h3>Institucional</h3>
-      <p>Universidades, consultorias e equipes de research: licenças em volume, instalação assistida e treinamento.</p>
+<!-- ================= EDIÇÕES ================= -->
+<section class="section section--tint" id="edicoes">
+  <div class="wrap">
+    <div class="rowhead">
+      <h2 class="rowhead__title">Edições</h2>
+      <p class="rowhead__meta">Um só motor econométrico, três variantes</p>
     </div>
-    <a href="#contato" class="btn btn--line">Falar com a equipe</a>
+    <div class="editions-grid">
+      <article>
+        <h3 class="lockup lockup--plan">
+          <img class="lockup__logo" src="assets/marca/moetta-128.png" alt="" width="52" height="52">
+          <span class="lockup__txt"><img class="lockup__nome" src="assets/marca/moetta-nome.svg" alt="Moettá" width="115" height="30"></span>
+        </h3>
+        <p>O laboratório completo: fontes, tratamento, estimação, predição e leitura dos resultados.</p>
+      </article>
+      <article>
+        <h3 class="lockup lockup--plan">
+          <img class="lockup__logo" src="assets/marca/moetta-ia-128.png" alt="" width="52" height="52">
+          <span class="lockup__txt"><img class="lockup__nome" src="assets/marca/moetta-nome.svg" alt="Moettá" width="100" height="26"><b class="lockup__suf">IA</b></span>
+        </h3>
+        <p>Acrescenta um assistente que opera o app por conversa, chamando as ferramentas do próprio motor.</p>
+      </article>
+      <article>
+        <h3 class="lockup lockup--plan">
+          <img class="lockup__logo" src="assets/marca/moetta-dev-128.png" alt="" width="52" height="52">
+          <span class="lockup__txt"><img class="lockup__nome" src="assets/marca/moetta-nome.svg" alt="Moettá" width="100" height="26"><b class="lockup__suf">Dev</b></span>
+        </h3>
+        <p>Acrescenta o modo Desenvolver, em que o assistente propõe novas telas e métodos como alterações verificadas.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE O AUTOR ================= -->
+<section class="section wrap" id="autor">
+  <div class="rowhead">
+    <h2 class="rowhead__title">Sobre o autor</h2>
+    <p class="rowhead__meta">São Paulo, SP</p>
+  </div>
+  <div class="author">
+    <!-- foto: salve como assets/img/autor.jpg (quadrada). Sem o arquivo, aparecem as iniciais. -->
+    <div class="author__photo">
+      <img src="assets/img/autor.jpg" alt="Thomas Cotrim Teixeira" width="420" height="420" onerror="this.remove()">
+      <span aria-hidden="true">TC</span>
+    </div>
+    <div class="author__text">
+      <h3 class="display">Thomas Cotrim Teixeira</h3>
+      <p class="author__role">Graduando em Ciências Econômicas pela FEA-USP · formatura em 2026</p>
+      <p>Estudo economia com orientação à pesquisa aplicada em macroeconomia, econometria e finanças. O Moettá nasceu da frustração com o tempo que uma pesquisa perde antes da primeira regressão — e da vontade de que cada resultado pudesse ser refeito, do dado bruto à conclusão, por qualquer pessoa.</p>
+      <p>Hoje sou estagiário de pesquisa, modelagem e dados no Fundo Garantidor de Créditos (FGC). Antes, fui estagiário de pesquisa no SOF–FIPE. Minha monografia estudou criptomoedas e variáveis macroeconômicas entre 2014 e 2025, e escrevo um livro, <em>Raízes e Revoltas</em>, sobre a formação socioeconômica do Brasil colonial.</p>
+      <ul class="author__tags">
+        <li>Macroeconomia</li><li>Econometria de alta dimensionalidade</li><li>Ciclos econômicos</li><li>Economia regional</li><li>História econômica do Brasil</li>
+      </ul>
+      <div class="author__links">
+        <a class="btn btn--line" href="https://github.com/thomasct123" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn--line" href="https://thomascotrim.blogspot.com" target="_blank" rel="noopener">Blog</a>
+        <!-- EDITE: cole o endereço do seu LinkedIn entre as aspas para o botão aparecer -->
+        <a class="btn btn--line" href="" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -416,14 +458,13 @@
       <img src="assets/marca/moetta-ia-128.png" alt="Moettá IA" width="64" height="64">
       <img src="assets/marca/moetta-dev-128.png" alt="Moettá Dev" width="64" height="64">
     </div>
-    <h2>Pronto para modelar com método?</h2>
-    <p class="lede">O Moettá está em fase de apresentação. Deixe seu e-mail para receber acesso antecipado e o working paper que descreve a metodologia.</p>
-    <form class="cta__form" onsubmit="event.preventDefault(); this.classList.add('is-sent');">
-      <label class="sr-only" for="email">E-mail</label>
-      <input id="email" type="email" placeholder="seu@email.com" required>
-      <button class="btn btn--dark" type="submit">Solicitar acesso</button>
-      <p class="cta__thanks">Obrigado. Entraremos em contato em breve.</p>
-    </form>
+    <h2>Vamos conversar sobre pesquisa?</h2>
+    <p class="lede">Se você pesquisa macroeconomia aplicada, orienta trabalhos na área ou quer testar o Moettá num estudo, fale comigo. Também envio o working paper completo.</p>
+    <div class="cta__links">
+      <!-- EDITE: troque pelo seu e-mail (mantenha o "mailto:") para o botão aparecer -->
+      <a class="btn btn--dark" href="">Enviar e-mail</a>
+      <a class="btn btn--line" href="https://github.com/thomasct123" target="_blank" rel="noopener">GitHub</a>
+    </div>
   </div>
 </section>
 
@@ -433,13 +474,13 @@
   <div class="wrap footer__grid">
     <div>
       <a href="#topo" class="lockup lockup--foot" aria-label="Moettá, início"><img class="lockup__logo" src="assets/marca/moetta-128.png" alt="" width="36" height="36"><img class="lockup__nome" src="assets/marca/moetta-nome-claro.svg" alt="Moettá" width="92" height="24"></a>
-      <p class="footer__note">Software de econometria e modelagem quantitativa.</p>
+      <p class="footer__note">Laboratório de pesquisa em macroeconomia aplicada. Projeto de Thomas Cotrim Teixeira.</p>
     </div>
-    <div><p class="footer__h">Produto</p><a href="#software">Software</a><a href="#funcionalidades">Funcionalidades</a><a href="#modulos">Módulos</a><a href="#metodos">Métodos</a></div>
-    <div><p class="footer__h">Edições</p><a href="#planos">Moettá</a><a href="#planos">Moettá IA</a><a href="#planos">Moettá Dev</a><a href="#planos">Institucional</a></div>
-    <div><p class="footer__h">Contato</p><a href="#contato">Solicitar acesso</a><a href="#contato">Working paper</a></div>
+    <div><p class="footer__h">Pesquisa</p><a href="#pesquisa">Potencial de pesquisa</a><a href="#working-paper">Working paper</a><a href="#metodos">Métodos</a></div>
+    <div><p class="footer__h">Software</p><a href="#funcionalidades">Funcionalidades</a><a href="#modulos">Módulos</a><a href="#edicoes">Edições</a></div>
+    <div><p class="footer__h">Autor</p><a href="#autor">Sobre</a><a href="https://github.com/thomasct123" target="_blank" rel="noopener">GitHub</a><a href="https://thomascotrim.blogspot.com" target="_blank" rel="noopener">Blog</a></div>
   </div>
-  <div class="wrap footer__base"><span>© 2026 Moettá</span><span>Windows · Português e inglês</span></div>
+  <div class="wrap footer__base"><span>© 2026 Thomas Cotrim Teixeira</span><span>Projeto independente · em desenvolvimento</span></div>
 </footer>
 
 <div class="lightbox" hidden>
