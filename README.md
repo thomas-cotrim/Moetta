@@ -37,7 +37,7 @@ Esta é a versão de divulgação (projeto de pesquisa, sem preços), publicada 
 Todo o texto está em `index.html`, em HTML simples. Procure (Ctrl+F) a frase que quer mudar, troque só o texto entre as marcas (`<p>…</p>`, `<h3>…</h3>`), salve e publique de novo. Pendências marcadas com `EDITE:`:
 
 - **Foto:** salve uma imagem quadrada como `assets/img/autor.jpg`. Sem ela, aparecem as iniciais "TC".
-- **LinkedIn e e-mail:** preencha o `href=""` dos botões; enquanto estiver vazio, o botão fica oculto.
+- **Links de contato:** e-mail, LinkedIn e GitHub estão em `index.html` (seções "autor", "contato" e rodapé). Um botão com `href=""` fica oculto.
 
 Depois de mudar `styles.css` ou `main.js`, aumente o número em `?v=` no `index.html` para o navegador não usar a versão antiga.
 
