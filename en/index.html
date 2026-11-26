@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moettá — Macroeconomics and financial markets</title>
+  <meta name="description" content="Moettá is a project by Thomas Cotrim: an integrated, verifiable quantitative lab for macroeconomic research and financial market analysis, from official data to replicable results.">
+  <meta name="theme-color" content="#F7F6F2">
+  <meta property="og:title" content="Moettá — Macroeconomics and financial markets">
+  <meta property="og:description" content="A quantitative lab for macroeconomic research and financial market analysis. A project by Thomas Cotrim.">
+  <meta property="og:image" content="../assets/img/previsao.webp">
+  <link rel="alternate" hreflang="pt-BR" href="https://thomasct123.github.io/Moetta/">
+  <link rel="alternate" hreflang="en" href="https://thomasct123.github.io/Moetta/en/">
+  <link rel="alternate" hreflang="es" href="https://thomasct123.github.io/Moetta/es/">
+  <link rel="icon" href="../assets/marca/favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/marca/moetta-128.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/marca/moetta-512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=8">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="topo">
+  <div class="wrap nav__inner">
+    <nav class="nav__left" aria-label="Pages">
+      <a class="pill" href="#pesquisa">Research</a>
+      <a class="pill" href="#software">Software</a>
+      <a class="pill" href="#metodos">Methods</a>
+      <a class="pill" href="#working-paper">Working paper</a>
+    </nav>
+    <a href="#inicio" class="lockup lockup--nav" aria-label="Moettá, home">
+      <img class="lockup__logo" src="../assets/marca/moetta-128.png" alt="" width="40" height="40">
+      <img class="lockup__nome" src="../assets/marca/moetta-nome.svg" alt="Moettá" width="115" height="30">
+    </a>
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Language">
+        <a href="../" hreflang="pt-BR">PT</a><a href="./" hreflang="en" aria-current="true">EN</a><a href="../es/" hreflang="es">ES</a>
+      </div>
+      <a class="pill" href="#autor">About the author</a>
+      <a class="pill pill--dark" href="#contato">Contact</a>
+      <button class="icon-btn nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 9h14M2 13h9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="drawer" hidden>
+    <div class="wrap drawer__inner">
+      <a href="#inicio">Home</a><a href="#pesquisa">Research</a><a href="#software">Software</a><a href="#metodos">Methods</a>
+      <a href="#working-paper">Working paper</a><a href="#autor">About the author</a><a href="#contato">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- PAGE 1 · HOME -->
+<div class="page is-active" id="inicio" data-title="Home">
+
+<section class="lead wrap">
+  <div class="rowhead">
+    <h2 class="rowhead__title">Research project</h2>
+    <p class="rowhead__meta">In development · November 2026</p>
+  </div>
+
+  <div class="lead__grid">
+    <div class="lead__col">
+      <article class="story">
+        <p class="meta"><span class="tag">Expectations</span><span>Focus survey</span></p>
+        <button class="story__img" data-lightbox data-src="../assets/img/expectativas.webp" aria-label="Enlarge the inflation expectations screen">
+          <img src="../assets/img/c-expectativas.webp" alt="Focus survey expectations for IPCA inflation, plotted in the year they refer to, through 2030" width="1093" height="565">
+        </button>
+        <h3>Inflation expectations plotted at their target date</h3>
+        <p>Each Focus forecast is drawn in its target year, tagged with the date it was made: the basis for studying credibility and expectation errors.</p>
+      </article>
+      <article class="story story--rule">
+        <p class="meta"><span class="tag">Financial markets</span><span>B3, Yahoo Finance, FRED</span></p>
+        <h3>Yield curve, FX, equities and crypto in one dataset</h3>
+        <p>The DI futures curve from 1 month to 10 years, the Ibovespa and crypto assets alongside the Selic rate and inflation, ready to estimate and forecast.</p>
+      </article>
+    </div>
+
+    <div class="lead__col lead__col--main">
+      <p class="meta"><span class="tag">Moettá</span><span>A project by Thomas Cotrim, FEA-USP</span></p>
+      <button class="feature-shot" data-lightbox data-src="../assets/img/previsao.webp" aria-label="Enlarge the forecasting screen">
+        <img src="../assets/img/previsao.webp" alt="Moettá forecasting screen: monthly IPCA forecast with a 95% interval and out-of-sample evaluation" width="1900" height="1055" fetchpriority="high">
+      </button>
+      <h1>A quantitative lab for macroeconomics and financial markets.</h1>
+      <p class="lede">Moettá brings the whole path of a time-series analysis, whether an academic study or a market reading, into a single verifiable, re-runnable chain: official data from the Central Bank of Brazil, IBGE and B3, cleaning, diagnostics, estimation and out-of-sample forecast evaluation. An independent project, built during an undergraduate degree in Economics.</p>
+      <div class="actions">
+        <a href="#pesquisa" class="btn btn--dark">Research agenda</a>
+        <a href="#software" class="btn btn--line">Explore the software</a>
+      </div>
+    </div>
+
+    <div class="lead__col">
+      <article class="story">
+        <p class="meta"><span class="tag">Monetary policy</span><span>1996–2026</span></p>
+        <button class="story__img" data-lightbox data-src="../assets/img/series.webp" aria-label="Enlarge the Selic and inflation screen">
+          <img src="../assets/img/c-series.webp" alt="Selic target and 12-month market-price inflation, 1996 to 2026" width="1093" height="795">
+        </button>
+        <h3 class="h3--lg">Interest rates and inflation since the Real Plan</h3>
+      </article>
+      <article class="story story--rule">
+        <p class="meta"><span class="tag">Forecasting</span><span>Out of sample</span></p>
+        <h3 class="h3--lg">Every model against a naive benchmark</h3>
+        <p>RMSE, Theil's U and Diebold-Mariano: in-sample fit is not enough.</p>
+      </article>
+      <article class="story story--rule">
+        <p class="meta"><span class="tag">Working paper</span><span>Preliminary draft</span></p>
+        <h3 class="h3--lg"><a href="#working-paper">An integrated, verifiable environment →</a></h3>
+      </article>
+    </div>
+  </div>
+
+  <dl class="figures">
+    <div><dt>6</dt><dd>public data sources integrated</dd></div>
+    <div><dt>110+</dt><dd>monthly series since the Real Plan</dd></div>
+    <div><dt>13</dt><dd>estimation fronts, with diagnostics</dd></div>
+    <div><dt>1 chain</dt><dd>from raw data to result, logged and re-runnable</dd></div>
+  </dl>
+</section>
+
+</div>
+
+<!-- PAGE 2 · RESEARCH -->
+<div class="page" id="pesquisa" data-title="Research">
+
+<section class="section wrap">
+  <div class="rowhead">
+    <h2 class="rowhead__title">Research potential</h2>
+    <p class="rowhead__meta">Questions Moettá can already investigate</p>
+  </div>
+  <p class="research__intro">The contribution is methodological: lowering the cost of reaching the first regression <em>without hiding the choices</em> that change the result.</p>
+  <div class="research">
+    <article>
+      <span class="num">01</span>
+      <h3>Monetary policy transmission</h3>
+      <p>How the Selic rate reaches inflation, credit and activity. VAR, VECM and local projections on interest rates, the DI curve and expectations.</p>
+      <p class="research__tools">VAR · VECM · local projections · Granger</p>
+    </article>
+    <article>
+      <span class="num">02</span>
+      <h3>Financial markets</h3>
+      <p>DI curve, FX, Ibovespa, commodities and crypto assets: how they respond to monetary policy and inflation surprises, and when technicals and fundamentals converge.</p>
+      <p class="research__tools">DI curve · technical analysis · Probit/Logit · VAR</p>
+    </article>
+    <article>
+      <span class="num">03</span>
+      <h3>Business cycles</h3>
+      <p>Markov regimes to date expansions and contractions in credit and activity, and the Hayek triangle to compare output by category at two dates.</p>
+      <p class="research__tools">Markov regimes · cycle phases · Hayek triangle</p>
+    </article>
+    <article>
+      <span class="num">04</span>
+      <h3>Expectations and credibility</h3>
+      <p>Focus forecasts by horizon, compared with realized inflation in the target year: bias, anchoring and reaction to shocks.</p>
+      <p class="research__tools">Focus by horizon · ARDL · events</p>
+    </article>
+    <article>
+      <span class="num">05</span>
+      <h3>Macro and market forecasting</h3>
+      <p>Systematic comparison of univariate, multivariate, regularized and factor models against the random walk, for inflation, interest rates or asset prices.</p>
+      <p class="research__tools">SARIMA · LASSO · PCA · Diebold-Mariano</p>
+    </article>
+    <article>
+      <span class="num">06</span>
+      <h3>Replicability</h3>
+      <p>Datasets that carry every transformation and formula in their metadata, rebuilt from source at each data update. Chang and Li (2015) replicated fewer than half of the papers they tested without the authors' help.</p>
+      <p class="research__tools">metadata · test suite · verification</p>
+    </article>
+  </div>
+</section>
+
+</div>
+
+<!-- PAGE 3 · SOFTWARE -->
+<div class="page" id="software" data-title="Software">
+
+<section class="section wrap">
+  <div class="rowhead">
+    <h2 class="rowhead__title">The software</h2>
+    <p class="rowhead__meta">Windows · PT / EN · no server</p>
+  </div>
+  <div class="statement">
+    <p class="statement__big">A complete econometrics lab that covers the full cycle of a quantitative study — <em>it fetches the data, cleans, derives, estimates, forecasts and evaluates</em> — on your own computer.</p>
+    <div class="principles">
+      <article>
+        <span class="num">01</span>
+        <h3>The engine computes, the interface draws</h3>
+        <p>Computation and interface live apart. Every number comes from auditable routines built on statsmodels, scipy and scikit-learn.</p>
+      </article>
+      <article>
+        <span class="num">02</span>
+        <h3>Reproducible by design</h3>
+        <p>Transformations and formulas travel in the dataset's metadata. On update, every derived column is recomputed from source.</p>
+      </article>
+      <article>
+        <span class="num">03</span>
+        <h3>Verified on every change</h3>
+        <p>A test suite checks the engine and records a fingerprint of the code; the app warns you when something has changed.</p>
+      </article>
+    </div>
+  </div>
+
+  <ol class="flow" aria-label="Workflow">
+    <li><span>Data</span>Extraction</li>
+    <li>Cleaning</li>
+    <li>Library</li>
+    <li>Update</li>
+    <li><span>Analysis</span>Visualization</li>
+    <li>Estimation</li>
+    <li>Forecasting</li>
+  </ol>
+</section>
+
+<section class="section section--tint" id="funcionalidades">
+  <div class="wrap">
+    <div class="rowhead">
+      <h2 class="rowhead__title">Features</h2>
+      <p class="rowhead__meta">Screenshots of the current version (Portuguese interface), with real data from 1996 to 2026</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Software screens">
+      <button role="tab" aria-selected="true" data-img="regressao" data-cap="Regression with HC3 or HAC (Newey-West) errors, VIF, Ljung-Box, Jarque-Bera, Breusch-Pagan and Durbin-Watson, in a single panel.">Regression</button>
+      <button role="tab" aria-selected="false" data-img="leitura" data-cap="The same regression, read in plain prose: what each coefficient says, with what confidence, and what the sample does not allow you to claim.">Plain-language reading</button>
+      <button role="tab" aria-selected="false" data-img="previsao" data-cap="SARIMA forecast with interval, test window and out-of-sample metrics: RMSE, MAE, Theil's U and coverage.">Forecasting</button>
+      <button role="tab" aria-selected="false" data-img="modelo-proprio" data-cap="Write your model with formulas — lag(), diff(), log(), interactions — and evaluate it one step ahead against the random walk.">Custom model</button>
+      <button role="tab" aria-selected="false" data-img="regimes" data-cap="Markov regime switching: the series with its dominant regime and the smoothed probabilities of each state.">Markov regimes</button>
+      <button role="tab" aria-selected="false" data-img="series" data-cap="Time series with a secondary axis, separate panels, box zoom and a value cursor.">Series</button>
+      <button role="tab" aria-selected="false" data-img="analise-tecnica" data-cap="Monthly candles, moving averages, Bollinger, MACD, RSI, ATR and ADX, with a technical reading of the latest observation.">Technical analysis</button>
+      <button role="tab" aria-selected="false" data-img="componentes" data-cap="Principal components with explained variance, loadings, components over time and saving the factors to the library.">Principal components</button>
+      <button role="tab" aria-selected="false" data-img="extracao" data-cap="Catalog grouped by theme, searchable by name, code, source or theme, with DI curve tenors of your choice.">Extraction</button>
+    </div>
+
+    <figure class="stage">
+      <button class="frame" data-lightbox aria-label="Enlarge image">
+        <img class="js-stage-img" src="../assets/img/regressao.webp" alt="Moettá screen: Regression" width="1900" height="1055" loading="lazy">
+      </button>
+      <figcaption>
+        <span class="js-stage-title">Regression</span>
+        <span class="js-stage-cap">Regression with HC3 or HAC (Newey-West) errors, VIF, Ljung-Box, Jarque-Bera, Breusch-Pagan and Durbin-Watson, in a single panel.</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section wrap" id="detalhe">
+  <div class="rowhead">
+    <h2 class="rowhead__title">In detail</h2>
+    <p class="rowhead__meta">Charts drawn by the app itself, with no external libraries</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <button class="card__img" data-lightbox data-src="../assets/img/correlacao.webp" aria-label="Enlarge"><img src="../assets/img/c-correlacao.webp" alt="Correlation matrix of six series" loading="lazy" width="1093" height="760"></button>
+      <p class="meta"><span class="tag">Visualization</span><span>Correlation</span></p>
+      <h3>Pearson and Spearman, with the right warning</h3>
+      <p>The reading reminds you that correlation in levels is not an economic relationship before stationarity has been checked.</p>
+    </article>
+    <article class="card">
+      <button class="card__img" data-lightbox data-src="../assets/img/regimes.webp" aria-label="Enlarge"><img src="../assets/img/c-regimes.webp" alt="Markov regimes in credit growth" loading="lazy" width="1070" height="725"></button>
+      <p class="meta"><span class="tag">Estimation</span><span>Regimes</span></p>
+      <h3>Credit cycles, dated by the model</h3>
+      <p>Two regimes in the growth of outstanding credit, with the probabilities for each month.</p>
+    </article>
+    <article class="card">
+      <button class="card__img" data-lightbox data-src="../assets/img/analise-tecnica.webp" aria-label="Enlarge"><img src="../assets/img/c-tecnica.webp" alt="Technical analysis of the Ibovespa with MACD and RSI" loading="lazy" width="1083" height="690"></button>
+      <p class="meta"><span class="tag">Visualization</span><span>Technical analysis</span></p>
+      <h3>Ibovespa in monthly candles, with MACD and RSI</h3>
+      <p>Indicators saved to the library and recomputed at every update.</p>
+    </article>
+    <article class="card">
+      <button class="card__img" data-lightbox data-src="../assets/img/triangulo.webp" aria-label="Enlarge"><img src="../assets/img/c-triangulo.webp" alt="Hayek triangle: output by use category, 01/2012 versus 12/2019" loading="lazy" width="1091" height="745"></button>
+      <p class="meta"><span class="tag">Cycles</span><span>Hayek triangle</span></p>
+      <h3>The Hayek triangle, compared at two dates</h3>
+      <p>From capital goods to non-durables, built from IBGE's output indices by use category.</p>
+    </article>
+    <article class="card">
+      <button class="card__img" data-lightbox data-src="../assets/img/leitura.webp" aria-label="Enlarge"><img src="../assets/img/c-leitura.webp" alt="Plain-language reading of a regression" loading="lazy" width="1062" height="683"></button>
+      <p class="meta"><span class="tag">Estimation</span><span>Reading</span></p>
+      <h3>A technical opinion next to every table</h3>
+      <p>Coefficients, significance and sample limits, explained in Portuguese or English.</p>
+    </article>
+    <article class="card">
+      <button class="card__img" data-lightbox data-src="../assets/img/modelo-proprio.webp" aria-label="Enlarge"><img src="../assets/img/c-proprio.webp" alt="One-step-ahead forecast against the random walk" loading="lazy" width="1007" height="363"></button>
+      <p class="meta"><span class="tag">Estimation</span><span>Custom model</span></p>
+      <h3>Your model against the random walk</h3>
+      <p>Genuine out-of-sample forecasting, with lag() making sure nothing from the future enters the fit.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section--tint" id="edicoes">
+  <div class="wrap">
+    <div class="rowhead">
+      <h2 class="rowhead__title">Editions</h2>
+      <p class="rowhead__meta">One econometric engine, three variants</p>
+    </div>
+    <div class="editions-grid">
+      <article>
+        <h3 class="lockup lockup--plan">
+          <img class="lockup__logo" src="../assets/marca/moetta-128.png" alt="" width="52" height="52">
+          <span class="lockup__txt"><img class="lockup__nome" src="../assets/marca/moetta-nome.svg" alt="Moettá" width="115" height="30"></span>
+        </h3>
+        <p>The complete lab: sources, cleaning, estimation, forecasting and reading of the results.</p>
+      </article>
+      <article>
+        <h3 class="lockup lockup--plan">
+          <img class="lockup__logo" src="../assets/marca/moetta-ia-128.png" alt="" width="52" height="52">
+          <span class="lockup__txt"><img class="lockup__nome" src="../assets/marca/moetta-nome.svg" alt="Moettá" width="100" height="26"><b class="lockup__suf">IA</b></span>
+        </h3>
+        <p>Adds an assistant that operates the app through conversation, calling the engine's own tools.</p>
+      </article>
+      <article>
+        <h3 class="lockup lockup--plan">
+          <img class="lockup__logo" src="../assets/marca/moetta-dev-128.png" alt="" width="52" height="52">
+          <span class="lockup__txt"><img class="lockup__nome" src="../assets/marca/moetta-nome.svg" alt="Moettá" width="100" height="26"><b class="lockup__suf">Dev</b></span>
+        </h3>
+        <p>Adds Develop mode, in which the assistant proposes new screens and methods as verified changes.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- PAGE 4 · METHODS -->
+<div class="page" id="metodos" data-title="Methods">
+
+<section class="section wrap">
+  <div class="rowhead">
+    <h2 class="rowhead__title">Methods</h2>
+    <p class="rowhead__meta">With the diagnostics that come with them by default</p>
+  </div>
+  <div class="spec">
+    <div class="spec__row"><span>Stationarity</span><p>ADF, KPSS, order of integration, ACF and PACF</p></div>
+    <div class="spec__row"><span>Regression</span><p>OLS with HC3 and HAC errors, VIF, residual diagnostics</p></div>
+    <div class="spec__row"><span>Cointegration</span><p>Engle-Granger, Johansen, VECM</p></div>
+    <div class="spec__row"><span>Systems</span><p>VAR with lag selection, impulse response, FEVD, Granger, stability</p></div>
+    <div class="spec__row"><span>Univariate</span><p>ARMA, ARIMA, SARIMA with automatic order suggestion</p></div>
+    <div class="spec__row"><span>Dynamic</span><p>ARDL with short and long run, local projections, Markov regimes</p></div>
+    <div class="spec__row"><span>Factors and selection</span><p>PCA, LASSO, Ridge, elastic net with time-series validation, stability selection</p></div>
+    <div class="spec__row"><span>Events</span><p>Probit and Logit for the probability of user-defined events</p></div>
+    <div class="spec__row"><span>Evaluation</span><p>RMSE, MAE, Theil's U, interval coverage, Diebold-Mariano</p></div>
+    <div class="spec__row"><span>Cycles</span><p>Cycle phases, Markov regimes, Hayek triangle</p></div>
+    <div class="spec__row"><span>Markets and technicals</span><p>DI curve by tenor, real rates, moving averages, MACD, RSI, Bollinger, ATR, ADX</p></div>
+  </div>
+</section>
+
+<section class="section section--tint" id="modulos">
+  <div class="wrap">
+    <div class="rowhead">
+      <h2 class="rowhead__title">Modules</h2>
+      <p class="rowhead__meta">Ten screens, in the order of a study</p>
+    </div>
+    <div class="modules">
+      <div class="modules__col">
+        <p class="modules__label">Data</p>
+        <div class="mod"><h3>Extraction</h3><p>SGS and Focus (Central Bank), SIDRA (IBGE), B3's DI curve from 1 month to 10 years, FRED and Yahoo Finance: activity, credit, interest rates, FX, commodities, equities and crypto assets.</p></div>
+        <div class="mod"><h3>Cleaning</h3><p>Monthly aggregation, Focus by horizon, X-13ARIMA-SEATS seasonal adjustment with STL as fallback, interpolation, lags and trimming, saved as presets.</p></div>
+        <div class="mod"><h3>Library</h3><p>Coverage, transformations, formula operations, real rates, renaming, export and versions in SQL Server.</p></div>
+        <div class="mod"><h3>Update</h3><p>Recognizes the origin of each column, derived or not, and recomputes it with the latest data.</p></div>
+      </div>
+      <div class="modules__col">
+        <p class="modules__label">Analysis</p>
+        <div class="mod"><h3>Visualization</h3><p>Series, correlation, technical analysis, cycle phases and the Hayek triangle. Expectations plotted at their target date.</p></div>
+        <div class="mod"><h3>Estimation</h3><p>Diagnostics, regression, cointegration, VAR, VECM, ARIMA/SARIMA, principal components, variable selection, local projections, Granger, ARDL, Markov regimes and custom models.</p></div>
+        <div class="mod"><h3>Forecasting</h3><p>AR/ARIMA/SARIMA, regression, regularized, VAR/VECM, factors and Probit/Logit events, with out-of-sample comparison.</p></div>
+      </div>
+      <div class="modules__col">
+        <p class="modules__label">System and help</p>
+        <div class="mod"><h3>Settings</h3><p>Presets, X-13, saved configurations, repository, database, assistant and appearance: ten themes, fonts and language.</p></div>
+        <div class="mod"><h3>Verification</h3><p>Engine test suite with a code fingerprint and a record of the last approved check.</p></div>
+        <div class="mod"><h3>Manual</h3><p>Ten searchable sections: sources, workflow, model guide, annotated interpretations, glossary and common pitfalls.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" id="ia">
+  <div class="rowhead">
+    <h2 class="rowhead__title">Assistant</h2>
+    <p class="rowhead__meta">Moettá IA and Moettá Dev</p>
+  </div>
+  <div class="ia">
+    <div>
+      <h3 class="display">The language model proposes. The engine computes.</h3>
+      <p class="lede">A chat panel sits beside any screen. Ask for an extraction, a unit root test or a forecast: the assistant calls the app's own tools, and every call shows up in the chat with its parameters and result.</p>
+      <ul class="checks">
+        <li>No number is produced by the language model — they all come from the engine.</li>
+        <li>Actions that save, delete or overwrite data ask for confirmation.</li>
+        <li>Only series names, metadata and summaries are sent; the dataset never leaves your computer.</li>
+        <li>Every conversation is logged, with the engine version and the input data.</li>
+      </ul>
+    </div>
+    <div class="ia__side">
+      <div class="chat">
+        <p class="chat__me">Test whether monthly IPCA is stationary and, if it is, fit an ARIMA.</p>
+        <div class="chat__tool"><code>testar_raiz_unitaria</code><b>ok</b><small>ipca_var_mensal_pct · ADF and KPSS</small></div>
+        <div class="chat__tool"><code>estimar_arima</code><b>ok</b><small>order suggested by AIC · residuals checked</small></div>
+        <p class="chat__ai">Both tests find the series stationary in levels. The chosen ARIMA leaves residuals with no significant autocorrelation (Ljung-Box)…</p>
+      </div>
+      <div class="dev">
+        <p class="meta"><span class="tag tag--gold">Moettá Dev</span><span>Develop mode</span></p>
+        <p>The assistant proposes changes to the app's own code as a diff. Nothing is saved without your click; the test suite runs on every change and everything can be reverted in one click.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- PAGE 5 · WORKING PAPER -->
+<div class="page" id="working-paper" data-title="Working paper">
+
+<section class="section wrap">
+  <div class="rowhead">
+    <h2 class="rowhead__title">Working paper</h2>
+    <p class="rowhead__meta">Preliminary draft · November 2026</p>
+  </div>
+  <div class="paper">
+    <div class="paper__head">
+      <p class="meta"><span class="tag">JEL</span><span>C32 · C53 · C87 · C88 · E32 · E43</span></p>
+      <h3 class="display">Moettá: an integrated and verifiable environment for applied macroeconomic analysis</h3>
+      <p class="paper__author">Thomas Cotrim</p>
+    </div>
+    <div class="paper__body">
+      <p>The paper presents Moettá, a local desktop application with auditable code that brings together, in a single chain, the extraction of macroeconomic and financial series from public sources, data cleaning, stationarity diagnostics, estimation and out-of-sample forecast evaluation.</p>
+      <p>Its design starts from three problems documented in the literature: the low replicability of applied research, the cost of data preparation and the gap between in-sample fit and predictive performance. Two extensions are described: a business-cycle analysis module and a natural-language assistant whose architecture prevents any displayed number from coming from the language model.</p>
+      <p class="paper__note">The empirical results section is in preparation. The full text (in Portuguese) is available on request through the <a href="#contato">contact</a> section.</p>
+    </div>
+  </div>
+  <figure class="paper__fig">
+    <button class="paper__sheet" data-lightbox aria-label="Enlarge the first page of the working paper">
+      <img src="../assets/img/paper.webp" alt="First page of the working paper: title, author, abstract, keywords and JEL classification" width="2250" height="1830" loading="lazy">
+    </button>
+    <figcaption>First page of the preliminary draft, in Portuguese, work in progress.</figcaption>
+  </figure>
+</section>
+
+</div>
+
+<!-- SHARED FOOTER OF EVERY PAGE: author and contact -->
+<section class="section wrap" id="autor">
+  <div class="rowhead">
+    <h2 class="rowhead__title">About the author</h2>
+    <p class="rowhead__meta">São Paulo, Brazil</p>
+  </div>
+  <div class="author">
+    <div class="author__photo">
+      <img src="../assets/img/autor.jpg" alt="Thomas Cotrim Teixeira" width="420" height="420" onerror="this.remove()">
+      <span aria-hidden="true">TC</span>
+    </div>
+    <div class="author__text">
+      <h3 class="display">Thomas Cotrim Teixeira</h3>
+      <p class="author__role">Economics undergraduate at FEA-USP (University of São Paulo) · graduating in 2026</p>
+      <p>I study economics with a focus on applied research in macroeconomics, econometrics and finance. Moettá grew out of frustration with how much time research loses before the first regression — and the wish that any result could be rebuilt, from raw data to conclusion, by anyone.</p>
+      <p>I am currently a research, modeling and data intern at the Brazilian Deposit Guarantee Fund (FGC). Before that, I was a research intern at SOF–FIPE. My undergraduate thesis studied cryptocurrencies and macroeconomic variables between 2014 and 2025, and I am writing a book, <em>Raízes e Revoltas</em>, on the socioeconomic formation of colonial Brazil.</p>
+      <ul class="author__tags">
+        <li>Macroeconomics</li><li>High-dimensional econometrics</li><li>Business cycles</li><li>Regional economics</li><li>Brazilian economic history</li>
+      </ul>
+      <div class="author__links">
+        <a class="btn btn--line" href="https://github.com/thomasct123" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn--line" href="mailto:thomascotrim99@gmail.com">thomascotrim99@gmail.com</a>
+        <a class="btn btn--line" href="https://www.linkedin.com/in/thomas-cotrim-06a550ab/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contato">
+  <div class="wrap cta__inner">
+    <div class="editions" aria-label="The three Moettá editions">
+      <img src="../assets/marca/moetta-128.png" alt="Moettá" width="64" height="64">
+      <img src="../assets/marca/moetta-ia-128.png" alt="Moettá IA" width="64" height="64">
+      <img src="../assets/marca/moetta-dev-128.png" alt="Moettá Dev" width="64" height="64">
+    </div>
+    <h2>Shall we talk research?</h2>
+    <p class="lede">If you research macroeconomics, work in financial markets, supervise work in the field or would like to try Moettá on an analysis, get in touch. I can also send the full working paper.</p>
+    <p class="cta__email"><a href="mailto:thomascotrim99@gmail.com">thomascotrim99@gmail.com</a></p>
+    <div class="cta__links">
+      <a class="btn btn--dark" href="mailto:thomascotrim99@gmail.com">Send an email</a>
+      <a class="btn btn--line" href="https://www.linkedin.com/in/thomas-cotrim-06a550ab/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn--line" href="https://github.com/thomasct123" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div>
+      <a href="#inicio" class="lockup lockup--foot" aria-label="Moettá, home"><img class="lockup__logo" src="../assets/marca/moetta-128.png" alt="" width="36" height="36"><img class="lockup__nome" src="../assets/marca/moetta-nome-claro.svg" alt="Moettá" width="92" height="24"></a>
+      <p class="footer__note">A quantitative lab for macroeconomics and financial markets. A project by Thomas Cotrim Teixeira.</p>
+    </div>
+    <div><p class="footer__h">Research</p><a href="#pesquisa">Research potential</a><a href="#working-paper">Working paper</a><a href="#metodos">Methods</a></div>
+    <div><p class="footer__h">Software</p><a href="#funcionalidades">Features</a><a href="#modulos">Modules</a><a href="#edicoes">Editions</a></div>
+    <div><p class="footer__h">Author</p><a href="#autor">About</a><a href="https://www.linkedin.com/in/thomas-cotrim-06a550ab/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/thomasct123" target="_blank" rel="noopener">GitHub</a><a href="mailto:thomascotrim99@gmail.com">Email</a></div>
+  </div>
+  <div class="wrap footer__base"><span>© 2026 Thomas Cotrim Teixeira</span><span>Independent project · in development</span></div>
+</footer>
+
+<div class="lightbox" hidden>
+  <button class="lightbox__close" aria-label="Close">×</button>
+  <img alt="">
+</div>
+
+<script src="../main.js?v=4" defer></script>
+</body>
+</html>
